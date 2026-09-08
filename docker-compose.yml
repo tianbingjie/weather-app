@@ -1,0 +1,7 @@
+services:
+  weather:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    ports: ["18000:8000"]
+
